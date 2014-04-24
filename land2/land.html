@@ -4,36 +4,52 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="stylesheets/bootstrap.css">
+<link rel="stylesheet" href="stylesheets/styles.css">
+<!-- <link rel="stylesheet" href="stylesheets/font-awesome.css"> -->
+<link rel="stylesheet" href="assets/benjii_logo.png">
 
-<link rel="stylesheet" href="">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.js"></script>
+	
 </head>
 <body>
 <div id="header">
-	<%= image_tag "benjii_logo.png", width: "100" %>
+	<img src="assets/benjii_logo.png" alt="benjii logo" width="100">
 </div>
 
 <div id="main">
 	<div class="header-info">
-		<h1>Benjii, Financial Reporting for the Future</h1>
-		<h2>Better financial reporting</h2>
-		<p>Empowering underserved communities by strengthening underserved people</p>
+		
+		<h1><b>It's never been this easy to keep track of your business finances</b></h1>
+		<h2><b>Sign up for a thirty day free trial that includes all your financial reporting!</b></h2>
+
+		<form class="form-inline" role="form">
+		  <div class="form-group">
+		    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
 	</div>
 </div>
 
 	
-<section id="call-to-action">
+<!-- <section id="call-to-action">
 	<h2>Sign up for our Private Beta</h2>
+	<form class="form-inline" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
 
-	<div class="form-inline" role="form">
-	<%= form_for @email do |f| %>
-	<%= f.text_field :content, class: "form-control", placeholder: "Email", :style => "width:368px;" %>
-	<%= f.submit 'Submit', class: "btn btn-primary" %>
-	<% end %>
-	</div>
-</section>
+</section> -->
 
 <section id="about" class="container">
 	<h1>About Benjii</h1>
